@@ -25,17 +25,14 @@ Param (
 )
 
 
-$private:theprivate = "This is private"
-
 function PrintGreeting() {
     Write-Verbose "This is verbose and only shows up when using the -Verbose parameter"
     # Write-Error "This is an error!"
     Write-Debug "This is a DEBUG message and only shows up when using the -Debug parameter"
     Write-Output "Hello $Name"
     Write-Output "My age is $myage"
-    Write-Host "In Function '$thepriate'"
 }
-write-Host "Out of the function '$theprivate'"
+
 $global:myage = 36
 
 # Start of Code
